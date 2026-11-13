@@ -1,0 +1,222 @@
+ .github/workflows/deploy.yml                       |   45 [32m+[m
+ .gitignore                                         |   11 [32m+[m
+ README.md                                          |   82 [32m+[m
+ index.html                                         |   21 [32m+[m
+ package-lock.json                                  | 4961 [32m++++++++++++++++++++[m
+ package.json                                       |   28 [32m+[m
+ public/.nojekyll                                   |    0
+ public/data/boundary.json                          |    1 [32m+[m
+ public/data/cells.json                             |    1 [32m+[m
+ public/data/evaluacion/curvas.json                 |    1 [32m+[m
+ public/data/evaluacion/evaluacion.json             |    1 [32m+[m
+ public/data/exploracion/distribuciones.json        |    1 [32m+[m
+ public/data/exploracion/mapa.json                  |    1 [32m+[m
+ public/data/exploracion/muestra.json               |    1 [32m+[m
+ public/data/exploracion/resumen.json               |    1 [32m+[m
+ .../2019/alos_elevacion_m_mean.float32.bin         |  Bin [31m0[m -> [32m383856[m bytes
+ .../2019/alos_pendiente_grados_mean.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2019/chelsa_sfcwind_media_t1_ms.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2019/chirps_dias_secos_t1.float32.bin          |  Bin [31m0[m -> [32m383856[m bytes
+ ...s_precipitacion_acumulada_prev3m_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ ...hirps_precipitacion_acumulada_t1_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2019/elegible.uint8.bin      |  Bin [31m0[m -> [32m95964[m bytes
+ .../ghsl_distancia_asentamiento_m_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2019/incendio_observado.uint8.bin    |  Bin [31m0[m -> [32m95964[m bytes
+ .../2019/osm_distancia_vias_m_mean.float32.bin     |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2019/prop_bosque_nativo.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2019/prop_pastizal.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../2019/prop_plantacion_forestal.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ .../2019/prop_tierra_agropecuaria.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ ...getacion_natural_arbustiva_herbacea.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2019/s2_nbr_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2019/s2_ndmi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2019/s2_ndvi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../2020/alos_elevacion_m_mean.float32.bin         |  Bin [31m0[m -> [32m383856[m bytes
+ .../2020/alos_pendiente_grados_mean.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2020/chelsa_sfcwind_media_t1_ms.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2020/chirps_dias_secos_t1.float32.bin          |  Bin [31m0[m -> [32m383856[m bytes
+ ...s_precipitacion_acumulada_prev3m_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ ...hirps_precipitacion_acumulada_t1_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2020/elegible.uint8.bin      |  Bin [31m0[m -> [32m95964[m bytes
+ .../ghsl_distancia_asentamiento_m_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2020/incendio_observado.uint8.bin    |  Bin [31m0[m -> [32m95964[m bytes
+ .../2020/osm_distancia_vias_m_mean.float32.bin     |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2020/prop_bosque_nativo.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2020/prop_pastizal.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../2020/prop_plantacion_forestal.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ .../2020/prop_tierra_agropecuaria.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ ...getacion_natural_arbustiva_herbacea.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2020/s2_nbr_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2020/s2_ndmi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2020/s2_ndvi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../2021/alos_elevacion_m_mean.float32.bin         |  Bin [31m0[m -> [32m383856[m bytes
+ .../2021/alos_pendiente_grados_mean.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2021/chelsa_sfcwind_media_t1_ms.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2021/chirps_dias_secos_t1.float32.bin          |  Bin [31m0[m -> [32m383856[m bytes
+ ...s_precipitacion_acumulada_prev3m_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ ...hirps_precipitacion_acumulada_t1_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2021/elegible.uint8.bin      |  Bin [31m0[m -> [32m95964[m bytes
+ .../ghsl_distancia_asentamiento_m_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2021/incendio_observado.uint8.bin    |  Bin [31m0[m -> [32m95964[m bytes
+ .../2021/osm_distancia_vias_m_mean.float32.bin     |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2021/prop_bosque_nativo.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2021/prop_pastizal.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../2021/prop_plantacion_forestal.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ .../2021/prop_tierra_agropecuaria.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ ...getacion_natural_arbustiva_herbacea.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2021/s2_nbr_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2021/s2_ndmi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2021/s2_ndvi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../2022/alos_elevacion_m_mean.float32.bin         |  Bin [31m0[m -> [32m383856[m bytes
+ .../2022/alos_pendiente_grados_mean.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2022/chelsa_sfcwind_media_t1_ms.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2022/chirps_dias_secos_t1.float32.bin          |  Bin [31m0[m -> [32m383856[m bytes
+ ...s_precipitacion_acumulada_prev3m_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ ...hirps_precipitacion_acumulada_t1_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2022/elegible.uint8.bin      |  Bin [31m0[m -> [32m95964[m bytes
+ .../ghsl_distancia_asentamiento_m_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2022/incendio_observado.uint8.bin    |  Bin [31m0[m -> [32m95964[m bytes
+ .../2022/osm_distancia_vias_m_mean.float32.bin     |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2022/prop_bosque_nativo.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2022/prop_pastizal.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../2022/prop_plantacion_forestal.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ .../2022/prop_tierra_agropecuaria.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ ...getacion_natural_arbustiva_herbacea.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2022/s2_nbr_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2022/s2_ndmi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2022/s2_ndvi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../2023/alos_elevacion_m_mean.float32.bin         |  Bin [31m0[m -> [32m383856[m bytes
+ .../2023/alos_pendiente_grados_mean.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2023/chelsa_sfcwind_media_t1_ms.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2023/chirps_dias_secos_t1.float32.bin          |  Bin [31m0[m -> [32m383856[m bytes
+ ...s_precipitacion_acumulada_prev3m_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ ...hirps_precipitacion_acumulada_t1_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2023/elegible.uint8.bin      |  Bin [31m0[m -> [32m95964[m bytes
+ .../ghsl_distancia_asentamiento_m_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2023/incendio_observado.uint8.bin    |  Bin [31m0[m -> [32m95964[m bytes
+ .../2023/osm_distancia_vias_m_mean.float32.bin     |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2023/prop_bosque_nativo.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2023/prop_pastizal.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../2023/prop_plantacion_forestal.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ .../2023/prop_tierra_agropecuaria.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ ...getacion_natural_arbustiva_herbacea.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2023/s2_nbr_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2023/s2_ndmi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2023/s2_ndvi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../2024/alos_elevacion_m_mean.float32.bin         |  Bin [31m0[m -> [32m383856[m bytes
+ .../2024/alos_pendiente_grados_mean.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2024/chelsa_sfcwind_media_t1_ms.float32.bin    |  Bin [31m0[m -> [32m383856[m bytes
+ .../2024/chirps_dias_secos_t1.float32.bin          |  Bin [31m0[m -> [32m383856[m bytes
+ ...s_precipitacion_acumulada_prev3m_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ ...hirps_precipitacion_acumulada_t1_mm.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2024/elegible.uint8.bin      |  Bin [31m0[m -> [32m95964[m bytes
+ .../ghsl_distancia_asentamiento_m_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2024/incendio_observado.uint8.bin    |  Bin [31m0[m -> [32m95964[m bytes
+ .../2024/osm_distancia_vias_m_mean.float32.bin     |  Bin [31m0[m -> [32m383856[m bytes
+ .../historico/2024/prop_bosque_nativo.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2024/prop_pastizal.float32.bin  |  Bin [31m0[m -> [32m383856[m bytes
+ .../2024/prop_plantacion_forestal.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ .../2024/prop_tierra_agropecuaria.float32.bin      |  Bin [31m0[m -> [32m383856[m bytes
+ ...getacion_natural_arbustiva_herbacea.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/2024/s2_nbr_mean.float32.bin |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2024/s2_ndmi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ .../data/historico/2024/s2_ndvi_mean.float32.bin   |  Bin [31m0[m -> [32m383856[m bytes
+ public/data/historico/geografia/cell_index.bin     |  Bin [31m0[m -> [32m31988[m bytes
+ public/data/historico/geografia/columna.bin        |  Bin [31m0[m -> [32m31988[m bytes
+ public/data/historico/geografia/fila.bin           |  Bin [31m0[m -> [32m31988[m bytes
+ .../data/historico/geografia/region_validacion.bin |    1 [32m+[m
+ public/data/historico/geografia/x_m.bin            |    1 [32m+[m
+ public/data/historico/geografia/y_m.bin            |  Bin [31m0[m -> [32m31988[m bytes
+ public/data/historico/metadata_historico.json      | 1580 [32m+++++++[m
+ public/data/historico/rangos_variables.json        |   66 [32m+[m
+ public/data/historico/serie_ambiental_mensual.json |    1 [32m+[m
+ public/data/historico/serie_dual_historica.json    |    1 [32m+[m
+ public/data/landmarks.json                         |   32 [32m+[m
+ public/data/manifest.json                          |    1 [32m+[m
+ public/data/metrics.json                           |    1 [32m+[m
+ public/data/models.json                            |    1 [32m+[m
+ public/data/monthly_stats.json                     |    1 [32m+[m
+ public/data/months/2022-01.json                    |    1 [32m+[m
+ public/data/months/2022-02.json                    |    1 [32m+[m
+ public/data/months/2022-03.json                    |    1 [32m+[m
+ public/data/months/2022-04.json                    |    1 [32m+[m
+ public/data/months/2022-05.json                    |    1 [32m+[m
+ public/data/months/2022-06.json                    |    1 [32m+[m
+ public/data/months/2022-09.json                    |    1 [32m+[m
+ public/data/months/2022-10.json                    |    1 [32m+[m
+ public/data/months/2022-11.json                    |    1 [32m+[m
+ public/data/months/2022-12.json                    |    1 [32m+[m
+ public/data/months/2023-01.json                    |    1 [32m+[m
+ public/data/months/2023-02.json                    |    1 [32m+[m
+ public/data/months/2023-03.json                    |    1 [32m+[m
+ public/data/months/2023-04.json                    |    1 [32m+[m
+ public/data/months/2023-05.json                    |    1 [32m+[m
+ public/data/months/2023-06.json                    |    1 [32m+[m
+ public/data/months/2023-07.json                    |    1 [32m+[m
+ public/data/months/2023-08.json                    |    1 [32m+[m
+ public/data/months/2023-09.json                    |    1 [32m+[m
+ public/data/months/2023-10.json                    |    1 [32m+[m
+ public/data/months/2023-11.json                    |    1 [32m+[m
+ public/data/months/2023-12.json                    |    1 [32m+[m
+ public/data/months/2024-01.json                    |    1 [32m+[m
+ public/data/months/2024-02.json                    |    1 [32m+[m
+ public/data/months/2024-03.json                    |    1 [32m+[m
+ public/data/months/2024-04.json                    |    1 [32m+[m
+ public/data/months/2024-05.json                    |    1 [32m+[m
+ public/data/months/2024-06.json                    |    1 [32m+[m
+ public/data/months/2024-08.json                    |    1 [32m+[m
+ public/data/months/2024-09.json                    |    1 [32m+[m
+ public/data/months/2024-10.json                    |    1 [32m+[m
+ public/data/months/2024-11.json                    |    1 [32m+[m
+ public/data/months/2024-12.json                    |    1 [32m+[m
+ public/data/redes/arquitecturas.json               |  713 [32m+++[m
+ public/data/redes/escala.json                      |  101 [32m+[m
+ public/data/redes/ml.json                          |  165 [32m+[m
+ public/data/terrain.f32.bin                        |  Bin [31m0[m -> [32m2411552[m bytes
+ public/data/terrain.json                           |   21 [32m+[m
+ scripts/crear_rangos_historicos.py                 |   27 [32m+[m
+ scripts/exportar_arquitecturas.py                  |   49 [32m+[m
+ scripts/exportar_evaluacion.py                     |  114 [32m+[m
+ scripts/exportar_exploracion.py                    |  221 [32m+[m
+ scripts/generar_datos_web.py                       |  113 [32m+[m
+ scripts/generar_referencias_3d.py                  |   80 [32m+[m
+ scripts/verificar_publicacion.mjs                  |   57 [32m+[m
+ src/App.jsx                                        |   46 [32m+[m
+ src/GraficoHistoricoDual.jsx                       |   73 [32m+[m
+ src/datos/carga.js                                 |  136 [32m+[m
+ src/datos/variables.js                             |   92 [32m+[m
+ src/estado.jsx                                     |   48 [32m+[m
+ src/evaluacion/ModuloEvaluacion.jsx                |   45 [32m+[m
+ src/evaluacion/Secciones.jsx                       |  249 [32m+[m
+ src/exploracion/MapaFrecuencia.jsx                 |   95 [32m+[m
+ src/exploracion/ModuloExploracion.jsx              |  302 [32m++[m
+ src/geo/relieve.js                                 |  118 [32m+[m
+ src/geo/sombreado.js                               |   27 [32m+[m
+ src/geo/sombreado.worker.js                        |   62 [32m+[m
+ src/graficos/Formula.jsx                           |   22 [32m+[m
+ src/graficos/Grafico.jsx                           |   37 [32m+[m
+ src/main.jsx                                       |    7 [32m+[m
+ src/redes/ModuloRedes.jsx                          |   68 [32m+[m
+ src/redes/Pipeline.jsx                             |   88 [32m+[m
+ src/redes/Red3D.jsx                                |  101 [32m+[m
+ src/redes/RedCNN.jsx                               |  163 [32m+[m
+ src/redes/RedCNNLSTM.jsx                           |  100 [32m+[m
+ src/redes/RedLSTM.jsx                              |  137 [32m+[m
+ src/redes/RedMLP.jsx                               |  121 [32m+[m
+ src/redes/comun.jsx                                |  125 [32m+[m
+ src/redes/datosReales.js                           |   85 [32m+[m
+ src/redes/ml/ModBoosting.jsx                       |  123 [32m+[m
+ src/redes/ml/ModBosque.jsx                         |  100 [32m+[m
+ src/redes/ml/ModLogistica.jsx                      |   99 [32m+[m
+ src/redes/ml/arboles.js                            |   97 [32m+[m
+ src/redes/ml/comunML.jsx                           |   51 [32m+[m
+ src/redes/ml/datosDemo.js                          |   31 [32m+[m
+ src/style.css                                      |  423 [32m++[m
+ src/territorio/Escena3D.jsx                        |  156 [32m+[m
+ src/territorio/Etiqueta.jsx                        |   26 [32m+[m
+ src/territorio/GraficosPredictivos.jsx             |   28 [32m+[m
+ src/territorio/LineaTiempo.jsx                     |   41 [32m+[m
+ src/territorio/ModuloTerritorio.jsx                |  376 [32m++[m
+ src/territorio/SerieCelda.jsx                      |   44 [32m+[m
+ vite.config.js                                     |   32 [32m+[m
+ 221 files changed, 12510 insertions(+)
