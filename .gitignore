@@ -1,0 +1,11 @@
+node_modules/
+dist/
+# Copias locales de versiones anteriores del código (los respaldos están fuera del repositorio)
+src/*.bak
+src/*.bak.jsx
+src/*.jsx.bak
+src/HistoricoDual.jsx
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/

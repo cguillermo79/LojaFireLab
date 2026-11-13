@@ -1,0 +1,1580 @@
+{
+  "descripcion": "Datos HISTORICOS observados 2019-2024; NO son predicciones neuronales",
+  "origen": "data/processed/panel_incendios.npz",
+  "origen_sha256": "a32f48e07a34813273668dae6a369e7f528a877a2e3611dd7b94bf33a56e251c",
+  "resumen_origen": "results/dashboard/prevalencia_mensual.csv",
+  "resumen_sha256": "fe970b8331a023f1f6117b00f63a5c301eb3aa7901a8a3bc58182047c9e6485c",
+  "generado_utc": "2026-11-11T23:22:31.414939+00:00",
+  "sistema_coordenadas": "EPSG:32717",
+  "orden": "Año / mes (12) / celda (orden cell_index en geografia/cell_index.bin)",
+  "dimensiones": {
+    "meses": 72,
+    "celdas": 7997,
+    "variables": 16
+  },
+  "tipos": {
+    "variables": "Float32 little-endian; NaN equivale a faltante",
+    "incendio_observado": "Uint8: 0 no, 1 sí, 255 sin observación elegible",
+    "elegible": "Uint8: 0 no, 1 sí"
+  },
+  "advertencias": [
+    "Las variables incluyen atributos estáticos; el nombre y diccionario determinan su significado.",
+    "Para meses EXCLUIDO_EN_RESUMEN no se debe representar ausencia de incendios como cero ni un mapa mensual completo.",
+    "Las celdas no elegibles deben representarse como sin datos.",
+    "No transformar estos datos históricos en probabilidades predichas."
+  ],
+  "variables": [
+    {
+      "id": "chirps_precipitacion_acumulada_t1_mm",
+      "nombre": "Precipitación del mes previo",
+      "unidad": "mm",
+      "grupo": "Clima"
+    },
+    {
+      "id": "chirps_precipitacion_acumulada_prev3m_mm",
+      "nombre": "Precipitación de los 3 meses previos",
+      "unidad": "mm",
+      "grupo": "Clima"
+    },
+    {
+      "id": "chirps_dias_secos_t1",
+      "nombre": "Días secos del mes previo",
+      "unidad": "días",
+      "grupo": "Clima"
+    },
+    {
+      "id": "chelsa_sfcwind_media_t1_ms",
+      "nombre": "Viento medio del mes previo",
+      "unidad": "m/s",
+      "grupo": "Clima"
+    },
+    {
+      "id": "s2_ndvi_mean",
+      "nombre": "NDVI",
+      "unidad": "índice",
+      "grupo": "Vegetación"
+    },
+    {
+      "id": "s2_ndmi_mean",
+      "nombre": "NDMI",
+      "unidad": "índice",
+      "grupo": "Vegetación"
+    },
+    {
+      "id": "s2_nbr_mean",
+      "nombre": "NBR",
+      "unidad": "índice",
+      "grupo": "Vegetación"
+    },
+    {
+      "id": "alos_elevacion_m_mean",
+      "nombre": "Elevación",
+      "unidad": "m",
+      "grupo": "Terreno"
+    },
+    {
+      "id": "alos_pendiente_grados_mean",
+      "nombre": "Pendiente",
+      "unidad": "grados",
+      "grupo": "Terreno"
+    },
+    {
+      "id": "ghsl_distancia_asentamiento_m_mean",
+      "nombre": "Distancia a asentamientos",
+      "unidad": "m",
+      "grupo": "Humano"
+    },
+    {
+      "id": "osm_distancia_vias_m_mean",
+      "nombre": "Distancia a vías",
+      "unidad": "m",
+      "grupo": "Humano"
+    },
+    {
+      "id": "prop_bosque_nativo",
+      "nombre": "Bosque nativo",
+      "unidad": "proporción",
+      "grupo": "Cobertura"
+    },
+    {
+      "id": "prop_pastizal",
+      "nombre": "Pastizal",
+      "unidad": "proporción",
+      "grupo": "Cobertura"
+    },
+    {
+      "id": "prop_tierra_agropecuaria",
+      "nombre": "Tierra agropecuaria",
+      "unidad": "proporción",
+      "grupo": "Cobertura"
+    },
+    {
+      "id": "prop_vegetacion_natural_arbustiva_herbacea",
+      "nombre": "Vegetación arbustiva y herbácea",
+      "unidad": "proporción",
+      "grupo": "Cobertura"
+    },
+    {
+      "id": "prop_plantacion_forestal",
+      "nombre": "Plantación forestal",
+      "unidad": "proporción",
+      "grupo": "Cobertura"
+    }
+  ],
+  "meses": [
+    {
+      "fecha": "2019-01",
+      "anio": 2019,
+      "mes": 1,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 6,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 6,
+      "prevalencia_resumen": 0.0007573844989,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-02",
+      "anio": 2019,
+      "mes": 2,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-03",
+      "anio": 2019,
+      "mes": 3,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 24,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 24,
+      "prevalencia_resumen": 0.003029537995,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-04",
+      "anio": 2019,
+      "mes": 4,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-05",
+      "anio": 2019,
+      "mes": 5,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-06",
+      "anio": 2019,
+      "mes": 6,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-07",
+      "anio": 2019,
+      "mes": 7,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 8,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 8,
+      "prevalencia_resumen": 0.001009845998,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-08",
+      "anio": 2019,
+      "mes": 8,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 15,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 15,
+      "prevalencia_resumen": 0.001893461247,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-09",
+      "anio": 2019,
+      "mes": 9,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 128,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 128,
+      "prevalencia_resumen": 0.01615753598,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-10",
+      "anio": 2019,
+      "mes": 10,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 19,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 19,
+      "prevalencia_resumen": 0.002398384246,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-11",
+      "anio": 2019,
+      "mes": 11,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2019-12",
+      "anio": 2019,
+      "mes": 12,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-01",
+      "anio": 2020,
+      "mes": 1,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-02",
+      "anio": 2020,
+      "mes": 2,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 16,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 16,
+      "prevalencia_resumen": 0.002019691997,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-03",
+      "anio": 2020,
+      "mes": 3,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-04",
+      "anio": 2020,
+      "mes": 4,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-05",
+      "anio": 2020,
+      "mes": 5,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 9,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 9,
+      "prevalencia_resumen": 0.001136076748,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-06",
+      "anio": 2020,
+      "mes": 6,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 12,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 12,
+      "prevalencia_resumen": 0.001514768998,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-07",
+      "anio": 2020,
+      "mes": 7,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-08",
+      "anio": 2020,
+      "mes": 8,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 115,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 115,
+      "prevalencia_resumen": 0.01451653623,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-09",
+      "anio": 2020,
+      "mes": 9,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 45,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 45,
+      "prevalencia_resumen": 0.005680383741,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-10",
+      "anio": 2020,
+      "mes": 10,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 137,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 137,
+      "prevalencia_resumen": 0.01729361272,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-11",
+      "anio": 2020,
+      "mes": 11,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 178,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 178,
+      "prevalencia_resumen": 0.02246907347,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2020-12",
+      "anio": 2020,
+      "mes": 12,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-01",
+      "anio": 2021,
+      "mes": 1,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-02",
+      "anio": 2021,
+      "mes": 2,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 9,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 9,
+      "prevalencia_resumen": 0.001136076748,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-03",
+      "anio": 2021,
+      "mes": 3,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-04",
+      "anio": 2021,
+      "mes": 4,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-05",
+      "anio": 2021,
+      "mes": 5,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-06",
+      "anio": 2021,
+      "mes": 6,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-07",
+      "anio": 2021,
+      "mes": 7,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 20,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 20,
+      "prevalencia_resumen": 0.002524614996,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-08",
+      "anio": 2021,
+      "mes": 8,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 15,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 15,
+      "prevalencia_resumen": 0.001893461247,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-09",
+      "anio": 2021,
+      "mes": 9,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 13,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 13,
+      "prevalencia_resumen": 0.001640999748,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-10",
+      "anio": 2021,
+      "mes": 10,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 6,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 6,
+      "prevalencia_resumen": 0.0007573844989,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-11",
+      "anio": 2021,
+      "mes": 11,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 8,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 8,
+      "prevalencia_resumen": 0.001009845998,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2021-12",
+      "anio": 2021,
+      "mes": 12,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-01",
+      "anio": 2022,
+      "mes": 1,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-02",
+      "anio": 2022,
+      "mes": 2,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-03",
+      "anio": 2022,
+      "mes": 3,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-04",
+      "anio": 2022,
+      "mes": 4,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-05",
+      "anio": 2022,
+      "mes": 5,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 16,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 16,
+      "prevalencia_resumen": 0.002019691997,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-06",
+      "anio": 2022,
+      "mes": 6,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 8,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 8,
+      "prevalencia_resumen": 0.001009845998,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-07",
+      "anio": 2022,
+      "mes": 7,
+      "estado": "EXCLUIDO_EN_RESUMEN",
+      "elegibles_panel": 0,
+      "eventos_panel": 0,
+      "elegibles_resumen": 0,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": null,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-08",
+      "anio": 2022,
+      "mes": 8,
+      "estado": "EXCLUIDO_EN_RESUMEN",
+      "elegibles_panel": 13,
+      "eventos_panel": 13,
+      "elegibles_resumen": 0,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": null,
+      "observaciones_parciales": true
+    },
+    {
+      "fecha": "2022-09",
+      "anio": 2022,
+      "mes": 9,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 53,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 53,
+      "prevalencia_resumen": 0.00669022974,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-10",
+      "anio": 2022,
+      "mes": 10,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 62,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 62,
+      "prevalencia_resumen": 0.007826306488,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-11",
+      "anio": 2022,
+      "mes": 11,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 62,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 62,
+      "prevalencia_resumen": 0.007826306488,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2022-12",
+      "anio": 2022,
+      "mes": 12,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 41,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 41,
+      "prevalencia_resumen": 0.005175460742,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-01",
+      "anio": 2023,
+      "mes": 1,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 7,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 7,
+      "prevalencia_resumen": 0.0008836152487,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-02",
+      "anio": 2023,
+      "mes": 2,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-03",
+      "anio": 2023,
+      "mes": 3,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-04",
+      "anio": 2023,
+      "mes": 4,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-05",
+      "anio": 2023,
+      "mes": 5,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-06",
+      "anio": 2023,
+      "mes": 6,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 16,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 16,
+      "prevalencia_resumen": 0.002019691997,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-07",
+      "anio": 2023,
+      "mes": 7,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 26,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 26,
+      "prevalencia_resumen": 0.003281999495,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-08",
+      "anio": 2023,
+      "mes": 8,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 143,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 143,
+      "prevalencia_resumen": 0.01805099722,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-09",
+      "anio": 2023,
+      "mes": 9,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 306,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 306,
+      "prevalencia_resumen": 0.03862660944,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-10",
+      "anio": 2023,
+      "mes": 10,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 201,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 201,
+      "prevalencia_resumen": 0.02537238071,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-11",
+      "anio": 2023,
+      "mes": 11,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 42,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 42,
+      "prevalencia_resumen": 0.005301691492,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2023-12",
+      "anio": 2023,
+      "mes": 12,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 6,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 6,
+      "prevalencia_resumen": 0.0007573844989,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-01",
+      "anio": 2024,
+      "mes": 1,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 6,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 6,
+      "prevalencia_resumen": 0.0007573844989,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-02",
+      "anio": 2024,
+      "mes": 2,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-03",
+      "anio": 2024,
+      "mes": 3,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 15,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 15,
+      "prevalencia_resumen": 0.001893461247,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-04",
+      "anio": 2024,
+      "mes": 4,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-05",
+      "anio": 2024,
+      "mes": 5,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-06",
+      "anio": 2024,
+      "mes": 6,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 0,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": 0.0,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-07",
+      "anio": 2024,
+      "mes": 7,
+      "estado": "EXCLUIDO_EN_RESUMEN",
+      "elegibles_panel": 14,
+      "eventos_panel": 14,
+      "elegibles_resumen": 0,
+      "eventos_resumen": 0,
+      "prevalencia_resumen": null,
+      "observaciones_parciales": true
+    },
+    {
+      "fecha": "2024-08",
+      "anio": 2024,
+      "mes": 8,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 175,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 175,
+      "prevalencia_resumen": 0.02209038122,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-09",
+      "anio": 2024,
+      "mes": 9,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 289,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 289,
+      "prevalencia_resumen": 0.0364806867,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-10",
+      "anio": 2024,
+      "mes": 10,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 150,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 150,
+      "prevalencia_resumen": 0.01893461247,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-11",
+      "anio": 2024,
+      "mes": 11,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 508,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 508,
+      "prevalencia_resumen": 0.0641252209,
+      "observaciones_parciales": false
+    },
+    {
+      "fecha": "2024-12",
+      "anio": 2024,
+      "mes": 12,
+      "estado": "DISPONIBLE",
+      "elegibles_panel": 7922,
+      "eventos_panel": 15,
+      "elegibles_resumen": 7922,
+      "eventos_resumen": 15,
+      "prevalencia_resumen": 0.001893461247,
+      "observaciones_parciales": false
+    }
+  ],
+  "discrepancias": [
+    {
+      "fecha": "2022-08",
+      "panel_elegibles": 13,
+      "panel_eventos": 13,
+      "resumen_elegibles": 0,
+      "resumen_eventos": 0,
+      "mes_excluido": true
+    },
+    {
+      "fecha": "2024-07",
+      "panel_elegibles": 14,
+      "panel_eventos": 14,
+      "resumen_elegibles": 0,
+      "resumen_eventos": 0,
+      "mes_excluido": true
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "geografia/cell_index.bin",
+      "bytes": 31988,
+      "sha256": "2f0e3bb73530fe0591004261e5ceed81194043e38a67d9e709b950ebfc22ae89"
+    },
+    {
+      "ruta": "geografia/fila.bin",
+      "bytes": 31988,
+      "sha256": "82871fcb8082c8f357fef96325c4b2287ba24dd5525b79d25fd1ad4d076e962d"
+    },
+    {
+      "ruta": "geografia/columna.bin",
+      "bytes": 31988,
+      "sha256": "2fe4e99555ea384461168a4823b1ee4a6125ba1d0285c3c37bb45a2b3919eb22"
+    },
+    {
+      "ruta": "geografia/x_m.bin",
+      "bytes": 31988,
+      "sha256": "e1c5ef3b3b6e4b998b9dcbdadf2bb0c812c5094111fa1cf3582a74edc73ba56f"
+    },
+    {
+      "ruta": "geografia/y_m.bin",
+      "bytes": 31988,
+      "sha256": "cf963074a29b9bc58538d4e0c765ca4cddf054142fff4bda3b1adbaf08b44eb0"
+    },
+    {
+      "ruta": "geografia/region_validacion.bin",
+      "bytes": 7997,
+      "sha256": "4b3cc022432aed999bd6cdfd4b90f62505db70aadecd916cbc14afb489d83136"
+    },
+    {
+      "ruta": "2019/incendio_observado.uint8.bin",
+      "bytes": 95964,
+      "sha256": "06d20da29f4d406d180bafc0a54a761dc934be2d66fda0a123cb9c4f1423bcaf"
+    },
+    {
+      "ruta": "2019/elegible.uint8.bin",
+      "bytes": 95964,
+      "sha256": "27da820d19ad599fb2fdfa8fd9817a02bade2312fe11b44c4044d49b8a11f017"
+    },
+    {
+      "ruta": "2019/chirps_precipitacion_acumulada_t1_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "60c17d47e63ff1962d9e96a5beebba09a941d2e2da2d5c25a50e903694a45144"
+    },
+    {
+      "ruta": "2019/chirps_precipitacion_acumulada_prev3m_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "731563f3343506f8c573e9a8d341b8ec5f0e0744b840182283198e51cbf68ef6"
+    },
+    {
+      "ruta": "2019/chirps_dias_secos_t1.float32.bin",
+      "bytes": 383856,
+      "sha256": "5a2e5f7e91c07e07d0ba69757620c3bcefd7b3d5143892a2ee2d53318b72746a"
+    },
+    {
+      "ruta": "2019/chelsa_sfcwind_media_t1_ms.float32.bin",
+      "bytes": 383856,
+      "sha256": "22fa5d5c07d23a291d8338859ded27f750b9ade9bfa1809cb07aba0b9380ee58"
+    },
+    {
+      "ruta": "2019/s2_ndvi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "42a2a5fbb44d30c157d51eb4178c471f49a4b9365bfbc5cf71e21ee50e4e68d6"
+    },
+    {
+      "ruta": "2019/s2_ndmi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "d5c99233081c935005173a09778f9be6e9edddbb4c69b629d93064730232b394"
+    },
+    {
+      "ruta": "2019/s2_nbr_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "bb3c9a7aa6b79971fa47b254812ff22b9032f89ad3bda09fa5778ca84bc4468e"
+    },
+    {
+      "ruta": "2019/alos_elevacion_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "a41ab51f7464bae799b06543cd129d95a26e758808ea52b8f0d2d3390eac254a"
+    },
+    {
+      "ruta": "2019/alos_pendiente_grados_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d475e112deb76223030ad67e4153de423d2d3570d87e7b3bb1ae5949c9f03d7"
+    },
+    {
+      "ruta": "2019/ghsl_distancia_asentamiento_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "76ab494154ad36a28d93bb5d5f8f12eafc520d6077b912fd371f8c77f4c896cf"
+    },
+    {
+      "ruta": "2019/osm_distancia_vias_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "13735f676073da4572cbe76384fa74edb9abfcee0e9398d644812f47ad6f388c"
+    },
+    {
+      "ruta": "2019/prop_bosque_nativo.float32.bin",
+      "bytes": 383856,
+      "sha256": "51df8c9d82e835d9d654bd89e623ef44ffe64fde60e63d6cd9ed3093026cf3f8"
+    },
+    {
+      "ruta": "2019/prop_pastizal.float32.bin",
+      "bytes": 383856,
+      "sha256": "0321bea61910ad3f686b0e94a11cdd34ecb9d7f952eccea57ccd4dc9ce8e8b42"
+    },
+    {
+      "ruta": "2019/prop_tierra_agropecuaria.float32.bin",
+      "bytes": 383856,
+      "sha256": "fc4bedc8224a7ed6ac35bee164f59df0633bdd8fab305f02aca97cfcf57e3513"
+    },
+    {
+      "ruta": "2019/prop_vegetacion_natural_arbustiva_herbacea.float32.bin",
+      "bytes": 383856,
+      "sha256": "f33d681e512e0350a926ff46cd86b50bc8225aea470d15eb623b351d4c19a0a6"
+    },
+    {
+      "ruta": "2019/prop_plantacion_forestal.float32.bin",
+      "bytes": 383856,
+      "sha256": "facc1311d83178559c3e4038beb3c8f21aa2f84d753c48733fc946321188cb38"
+    },
+    {
+      "ruta": "2020/incendio_observado.uint8.bin",
+      "bytes": 95964,
+      "sha256": "3aa351d4b9dee9a02ad84a2832c6a15fa5e40f1f643396083db56d96fb0f262a"
+    },
+    {
+      "ruta": "2020/elegible.uint8.bin",
+      "bytes": 95964,
+      "sha256": "27da820d19ad599fb2fdfa8fd9817a02bade2312fe11b44c4044d49b8a11f017"
+    },
+    {
+      "ruta": "2020/chirps_precipitacion_acumulada_t1_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "41ead94550a80f039b679e42824cfa03515a4fce4dd7902426be3077996df602"
+    },
+    {
+      "ruta": "2020/chirps_precipitacion_acumulada_prev3m_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d0bdb7599b524818489281b43a51385de3247699431f73185ef526a77d211b6"
+    },
+    {
+      "ruta": "2020/chirps_dias_secos_t1.float32.bin",
+      "bytes": 383856,
+      "sha256": "6d7b9fae6a0855e8f70431e0403bdda7df9514b99396820be8b719822ae1ce44"
+    },
+    {
+      "ruta": "2020/chelsa_sfcwind_media_t1_ms.float32.bin",
+      "bytes": 383856,
+      "sha256": "690ee03170bdef6546cc18af7acd026114c8befbb0e6d05c895267c79a0271c8"
+    },
+    {
+      "ruta": "2020/s2_ndvi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "85756b4ad98e779bdf792332d9011816dc2588a732c31445eb8e8694fccfad7e"
+    },
+    {
+      "ruta": "2020/s2_ndmi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "fcb90292b2001768f7ceb6d03ed1a0b9767e64abfe07e4111fb7c64c25fe84a3"
+    },
+    {
+      "ruta": "2020/s2_nbr_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "39c3ded72218e5d6174bd1a3f63e1c18ef279980f684636c4706acf7c52b3e63"
+    },
+    {
+      "ruta": "2020/alos_elevacion_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "a41ab51f7464bae799b06543cd129d95a26e758808ea52b8f0d2d3390eac254a"
+    },
+    {
+      "ruta": "2020/alos_pendiente_grados_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d475e112deb76223030ad67e4153de423d2d3570d87e7b3bb1ae5949c9f03d7"
+    },
+    {
+      "ruta": "2020/ghsl_distancia_asentamiento_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "76ab494154ad36a28d93bb5d5f8f12eafc520d6077b912fd371f8c77f4c896cf"
+    },
+    {
+      "ruta": "2020/osm_distancia_vias_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "13735f676073da4572cbe76384fa74edb9abfcee0e9398d644812f47ad6f388c"
+    },
+    {
+      "ruta": "2020/prop_bosque_nativo.float32.bin",
+      "bytes": 383856,
+      "sha256": "2f82e936d5f8262dec2c7ac7fb8ec277bcb744aa958804872cdad4a713af73c1"
+    },
+    {
+      "ruta": "2020/prop_pastizal.float32.bin",
+      "bytes": 383856,
+      "sha256": "2837132f3d913160049a1637eea5b4ddb74f7f0f4c5ee3742af8e858cf2bc9c2"
+    },
+    {
+      "ruta": "2020/prop_tierra_agropecuaria.float32.bin",
+      "bytes": 383856,
+      "sha256": "525448e7108e0e1b9d12c84704b901f0a3bb8874a3ce14f30a3b8a3a3d104d58"
+    },
+    {
+      "ruta": "2020/prop_vegetacion_natural_arbustiva_herbacea.float32.bin",
+      "bytes": 383856,
+      "sha256": "70dd6cc58aecaf1743d31f5002221bec2fa569302651a8be9a964dc9b188e0c6"
+    },
+    {
+      "ruta": "2020/prop_plantacion_forestal.float32.bin",
+      "bytes": 383856,
+      "sha256": "553d0e135067b61d5bc1d11ff7f38cffd12c703d564d2023d9010d43c877684c"
+    },
+    {
+      "ruta": "2021/incendio_observado.uint8.bin",
+      "bytes": 95964,
+      "sha256": "325db74a76424ace88c1911604e3e4663d8e721ed67e0d3760afa175d5638a91"
+    },
+    {
+      "ruta": "2021/elegible.uint8.bin",
+      "bytes": 95964,
+      "sha256": "27da820d19ad599fb2fdfa8fd9817a02bade2312fe11b44c4044d49b8a11f017"
+    },
+    {
+      "ruta": "2021/chirps_precipitacion_acumulada_t1_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "b11e459983e450ae4654543d070e795eedd1fcda3aa28e307c4bc023613a514b"
+    },
+    {
+      "ruta": "2021/chirps_precipitacion_acumulada_prev3m_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "cadbb79cc56cee535ae777f1a2b981a3a34c1106bead1846745861c4f0dfe53c"
+    },
+    {
+      "ruta": "2021/chirps_dias_secos_t1.float32.bin",
+      "bytes": 383856,
+      "sha256": "8d4ae875897e73c4e3e05f8e66cbfc139d9dd699b0e1ed6ddaf713f18bdf1818"
+    },
+    {
+      "ruta": "2021/chelsa_sfcwind_media_t1_ms.float32.bin",
+      "bytes": 383856,
+      "sha256": "8b8c087fd90976d13cae118d8d3453265b04d0ebd41c3056d07f8d9246809752"
+    },
+    {
+      "ruta": "2021/s2_ndvi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "bd907b632e68bdeae23c3e7621930ecdfacf83fcfc48dba4bfbf61cb15af5c40"
+    },
+    {
+      "ruta": "2021/s2_ndmi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "0bb8441a99ad57275d659ad8e1ecb14b4e8c3bdaa88c4de076b91f4e753c4e3c"
+    },
+    {
+      "ruta": "2021/s2_nbr_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "b873e88b80ec81a2e994c0aa38f67054c9a59b0d834e2b18b5ed50c3f5e16a61"
+    },
+    {
+      "ruta": "2021/alos_elevacion_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "a41ab51f7464bae799b06543cd129d95a26e758808ea52b8f0d2d3390eac254a"
+    },
+    {
+      "ruta": "2021/alos_pendiente_grados_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d475e112deb76223030ad67e4153de423d2d3570d87e7b3bb1ae5949c9f03d7"
+    },
+    {
+      "ruta": "2021/ghsl_distancia_asentamiento_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "76ab494154ad36a28d93bb5d5f8f12eafc520d6077b912fd371f8c77f4c896cf"
+    },
+    {
+      "ruta": "2021/osm_distancia_vias_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "13735f676073da4572cbe76384fa74edb9abfcee0e9398d644812f47ad6f388c"
+    },
+    {
+      "ruta": "2021/prop_bosque_nativo.float32.bin",
+      "bytes": 383856,
+      "sha256": "2f82e936d5f8262dec2c7ac7fb8ec277bcb744aa958804872cdad4a713af73c1"
+    },
+    {
+      "ruta": "2021/prop_pastizal.float32.bin",
+      "bytes": 383856,
+      "sha256": "2837132f3d913160049a1637eea5b4ddb74f7f0f4c5ee3742af8e858cf2bc9c2"
+    },
+    {
+      "ruta": "2021/prop_tierra_agropecuaria.float32.bin",
+      "bytes": 383856,
+      "sha256": "525448e7108e0e1b9d12c84704b901f0a3bb8874a3ce14f30a3b8a3a3d104d58"
+    },
+    {
+      "ruta": "2021/prop_vegetacion_natural_arbustiva_herbacea.float32.bin",
+      "bytes": 383856,
+      "sha256": "70dd6cc58aecaf1743d31f5002221bec2fa569302651a8be9a964dc9b188e0c6"
+    },
+    {
+      "ruta": "2021/prop_plantacion_forestal.float32.bin",
+      "bytes": 383856,
+      "sha256": "553d0e135067b61d5bc1d11ff7f38cffd12c703d564d2023d9010d43c877684c"
+    },
+    {
+      "ruta": "2022/incendio_observado.uint8.bin",
+      "bytes": 95964,
+      "sha256": "9b0a47461d0ecddaf0939681898190e4acf41118d6def432994e1da64d1bf01d"
+    },
+    {
+      "ruta": "2022/elegible.uint8.bin",
+      "bytes": 95964,
+      "sha256": "00f0a1171d83a5262bb548ab452228f56d6259161760a8e096feb4673f32f955"
+    },
+    {
+      "ruta": "2022/chirps_precipitacion_acumulada_t1_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "e2b4cfb6fdd812a3ab7080ee68147fb269d51b6bd9304668f8b04efd547b267a"
+    },
+    {
+      "ruta": "2022/chirps_precipitacion_acumulada_prev3m_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "380dec6bc39b466f7a32daa03107ddfc00e27eee36281241d40463d4269e640b"
+    },
+    {
+      "ruta": "2022/chirps_dias_secos_t1.float32.bin",
+      "bytes": 383856,
+      "sha256": "c24f3ece2c692a14aa5328ed6dae4e81e3d8a3f910a63aff78242a5f1e26e72e"
+    },
+    {
+      "ruta": "2022/chelsa_sfcwind_media_t1_ms.float32.bin",
+      "bytes": 383856,
+      "sha256": "1e191ea7461be0d91f508fb9765982439eec97e7c55c110e7e1b1a0e718da832"
+    },
+    {
+      "ruta": "2022/s2_ndvi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "5a82f2dfd17bb22f4994539af5d81242fafad2e87ff45b89f6b898af44638351"
+    },
+    {
+      "ruta": "2022/s2_ndmi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "123248be491744c23dcd6f0b8d5e4234fa832c5f7c199da07b084d59f05639ce"
+    },
+    {
+      "ruta": "2022/s2_nbr_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "7c809629b83a22d96a3a91ac00549ea7156fbc82cb882288ddf3f8c3075efb31"
+    },
+    {
+      "ruta": "2022/alos_elevacion_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "a41ab51f7464bae799b06543cd129d95a26e758808ea52b8f0d2d3390eac254a"
+    },
+    {
+      "ruta": "2022/alos_pendiente_grados_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d475e112deb76223030ad67e4153de423d2d3570d87e7b3bb1ae5949c9f03d7"
+    },
+    {
+      "ruta": "2022/ghsl_distancia_asentamiento_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "76ab494154ad36a28d93bb5d5f8f12eafc520d6077b912fd371f8c77f4c896cf"
+    },
+    {
+      "ruta": "2022/osm_distancia_vias_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "13735f676073da4572cbe76384fa74edb9abfcee0e9398d644812f47ad6f388c"
+    },
+    {
+      "ruta": "2022/prop_bosque_nativo.float32.bin",
+      "bytes": 383856,
+      "sha256": "2c42ecefc586e5bacd2106bad510070eec0d5c4176273f7b70be2acb508a4193"
+    },
+    {
+      "ruta": "2022/prop_pastizal.float32.bin",
+      "bytes": 383856,
+      "sha256": "8b32e3d65cc7fee6d100b6b35c57092a73bc0293daaab983c93c1722911a5fee"
+    },
+    {
+      "ruta": "2022/prop_tierra_agropecuaria.float32.bin",
+      "bytes": 383856,
+      "sha256": "0321bea61910ad3f686b0e94a11cdd34ecb9d7f952eccea57ccd4dc9ce8e8b42"
+    },
+    {
+      "ruta": "2022/prop_vegetacion_natural_arbustiva_herbacea.float32.bin",
+      "bytes": 383856,
+      "sha256": "8b6fe03ea7ed810948f0a05236e1670f5e68f45bb6ec88ece8286771050aa7c0"
+    },
+    {
+      "ruta": "2022/prop_plantacion_forestal.float32.bin",
+      "bytes": 383856,
+      "sha256": "6eb3b66b43ad4de0d3e29e7ecf4e342b562088a4b20e4f5769403734717fba7d"
+    },
+    {
+      "ruta": "2023/incendio_observado.uint8.bin",
+      "bytes": 95964,
+      "sha256": "cfeb0165402c58cab9993e837f5d38364563c1c3b0ba87ec3ab140859b55aa37"
+    },
+    {
+      "ruta": "2023/elegible.uint8.bin",
+      "bytes": 95964,
+      "sha256": "27da820d19ad599fb2fdfa8fd9817a02bade2312fe11b44c4044d49b8a11f017"
+    },
+    {
+      "ruta": "2023/chirps_precipitacion_acumulada_t1_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "5b23178f69a5aa584d776e69db4f1529731eb0653a26795461cd45e75b3b3a80"
+    },
+    {
+      "ruta": "2023/chirps_precipitacion_acumulada_prev3m_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "4d1b05294c7dd61bab69d305a35b3d1da82c3f5eec6bbdd261977420d6712df4"
+    },
+    {
+      "ruta": "2023/chirps_dias_secos_t1.float32.bin",
+      "bytes": 383856,
+      "sha256": "d9d3c26776916fcc54f5e5c295c516de6588679a727000dfc6a29dbd6ea092da"
+    },
+    {
+      "ruta": "2023/chelsa_sfcwind_media_t1_ms.float32.bin",
+      "bytes": 383856,
+      "sha256": "fb791ca20b2dfa488d83044175bf8bc740484dd9ee0594273ebda19ab8f55b65"
+    },
+    {
+      "ruta": "2023/s2_ndvi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "b1f13c0911ab249392cca1e9900062066e2ec78453767e1f8aedc21c2c4f4729"
+    },
+    {
+      "ruta": "2023/s2_ndmi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "094c40f8e726d1a67c26a3cb4847bdba9534fcab4e9c99e96b539b8ae3530444"
+    },
+    {
+      "ruta": "2023/s2_nbr_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "6dc2c392c6f65bf37ca99a6100ffdbc3b0d6b56821438aad1501162b9202cd92"
+    },
+    {
+      "ruta": "2023/alos_elevacion_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "a41ab51f7464bae799b06543cd129d95a26e758808ea52b8f0d2d3390eac254a"
+    },
+    {
+      "ruta": "2023/alos_pendiente_grados_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d475e112deb76223030ad67e4153de423d2d3570d87e7b3bb1ae5949c9f03d7"
+    },
+    {
+      "ruta": "2023/ghsl_distancia_asentamiento_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "76ab494154ad36a28d93bb5d5f8f12eafc520d6077b912fd371f8c77f4c896cf"
+    },
+    {
+      "ruta": "2023/osm_distancia_vias_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "13735f676073da4572cbe76384fa74edb9abfcee0e9398d644812f47ad6f388c"
+    },
+    {
+      "ruta": "2023/prop_bosque_nativo.float32.bin",
+      "bytes": 383856,
+      "sha256": "2c42ecefc586e5bacd2106bad510070eec0d5c4176273f7b70be2acb508a4193"
+    },
+    {
+      "ruta": "2023/prop_pastizal.float32.bin",
+      "bytes": 383856,
+      "sha256": "8b32e3d65cc7fee6d100b6b35c57092a73bc0293daaab983c93c1722911a5fee"
+    },
+    {
+      "ruta": "2023/prop_tierra_agropecuaria.float32.bin",
+      "bytes": 383856,
+      "sha256": "0321bea61910ad3f686b0e94a11cdd34ecb9d7f952eccea57ccd4dc9ce8e8b42"
+    },
+    {
+      "ruta": "2023/prop_vegetacion_natural_arbustiva_herbacea.float32.bin",
+      "bytes": 383856,
+      "sha256": "8b6fe03ea7ed810948f0a05236e1670f5e68f45bb6ec88ece8286771050aa7c0"
+    },
+    {
+      "ruta": "2023/prop_plantacion_forestal.float32.bin",
+      "bytes": 383856,
+      "sha256": "6eb3b66b43ad4de0d3e29e7ecf4e342b562088a4b20e4f5769403734717fba7d"
+    },
+    {
+      "ruta": "2024/incendio_observado.uint8.bin",
+      "bytes": 95964,
+      "sha256": "ba0d1552448a6f7295528c86743888d88f4669c8502e0f6bdc22481eea44eb11"
+    },
+    {
+      "ruta": "2024/elegible.uint8.bin",
+      "bytes": 95964,
+      "sha256": "163e098e532fef11e3d7f87ee6517689ed15b12464011d6b27442c71fef43833"
+    },
+    {
+      "ruta": "2024/chirps_precipitacion_acumulada_t1_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "305703cf8161c16694019b74d36f48c9180876ff34404aba92bc9029e59059d9"
+    },
+    {
+      "ruta": "2024/chirps_precipitacion_acumulada_prev3m_mm.float32.bin",
+      "bytes": 383856,
+      "sha256": "39fb236e70336be274c17eaa04aeec3bf4503217943b828fdb64673a5371cbb1"
+    },
+    {
+      "ruta": "2024/chirps_dias_secos_t1.float32.bin",
+      "bytes": 383856,
+      "sha256": "90b894ac2236babac10c2ef0b3407843434532a894c0b174f8bcaffac9a7b2f8"
+    },
+    {
+      "ruta": "2024/chelsa_sfcwind_media_t1_ms.float32.bin",
+      "bytes": 383856,
+      "sha256": "dbe406a79c75dc0034b2ef20258145470d32f14274ec58d9cca359c1aff5b0ba"
+    },
+    {
+      "ruta": "2024/s2_ndvi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "279584d23f85bbb775eba623bec5ea60227bb5292a5ac34c0d384a239d433cb5"
+    },
+    {
+      "ruta": "2024/s2_ndmi_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "ab6f168e385301d7f5ae824a5d2779b211638d48745667b1bfaffc0fb035ceec"
+    },
+    {
+      "ruta": "2024/s2_nbr_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "03c1dc048e755c5e3031f06ecda53291dd3d4dd4c5778a67ef85c8a522539469"
+    },
+    {
+      "ruta": "2024/alos_elevacion_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "a41ab51f7464bae799b06543cd129d95a26e758808ea52b8f0d2d3390eac254a"
+    },
+    {
+      "ruta": "2024/alos_pendiente_grados_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "3d475e112deb76223030ad67e4153de423d2d3570d87e7b3bb1ae5949c9f03d7"
+    },
+    {
+      "ruta": "2024/ghsl_distancia_asentamiento_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "76ab494154ad36a28d93bb5d5f8f12eafc520d6077b912fd371f8c77f4c896cf"
+    },
+    {
+      "ruta": "2024/osm_distancia_vias_m_mean.float32.bin",
+      "bytes": 383856,
+      "sha256": "13735f676073da4572cbe76384fa74edb9abfcee0e9398d644812f47ad6f388c"
+    },
+    {
+      "ruta": "2024/prop_bosque_nativo.float32.bin",
+      "bytes": 383856,
+      "sha256": "bd55a09fd1b8ac60c0b90f17e1f3f4032f11e44d9d9fc2145d7e2df4c38b836a"
+    },
+    {
+      "ruta": "2024/prop_pastizal.float32.bin",
+      "bytes": 383856,
+      "sha256": "617cfe463d455b3da1617f904c3782e23d5cff1ae94e3b064a40770c64db9ea4"
+    },
+    {
+      "ruta": "2024/prop_tierra_agropecuaria.float32.bin",
+      "bytes": 383856,
+      "sha256": "0321bea61910ad3f686b0e94a11cdd34ecb9d7f952eccea57ccd4dc9ce8e8b42"
+    },
+    {
+      "ruta": "2024/prop_vegetacion_natural_arbustiva_herbacea.float32.bin",
+      "bytes": 383856,
+      "sha256": "19b6e316dc84b7b423c316d20ebcbffb6c54e608ba3759ff113c8e1c72d10854"
+    },
+    {
+      "ruta": "2024/prop_plantacion_forestal.float32.bin",
+      "bytes": 383856,
+      "sha256": "ca0954ae0e2822ddc1c539e96675a6cdfc1b0727e4a7fdaad12a19016f3ca999"
+    }
+  ]
+}

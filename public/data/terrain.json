@@ -1,0 +1,21 @@
+{
+ "width": 572,
+ "height": 1054,
+ "file": "terrain.f32.bin",
+ "dtype": "float32-le",
+ "order": "filas de norte a sur, columnas de oeste a este",
+ "bounds": [
+  660420.0,
+  9500130.0,
+  711900.0,
+  9594990.0
+ ],
+ "crs": "EPSG:32717",
+ "resolucion_m": [
+  90.0,
+  90.0
+ ],
+ "source": "Copernicus DEM GLO-90; resolución nativa",
+ "elevacion_min_m": 733.5420532226562,
+ "elevacion_max_m": 3766.906005859375
+}

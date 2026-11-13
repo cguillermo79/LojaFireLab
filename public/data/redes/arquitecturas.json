@@ -1,0 +1,713 @@
+{
+ "origen": "lab_redes.visualizacion.arquitecturas.modelos_referencia + introspeccion.trazar_flujo",
+ "aviso": "Configuraciones de referencia para el análisis estructural; no son las de los resultados de validación.",
+ "modelos": {
+  "mlp": {
+   "configuracion": {
+    "entrada": 10,
+    "ocultas": [
+     12,
+     6
+    ],
+    "activacion": "relu",
+    "dropout": 0.0
+   },
+   "entradas": [
+    [
+     1,
+     10
+    ]
+   ],
+   "parametros_entrenables": 217,
+   "capas": [
+    {
+     "capa": "aplanar",
+     "tipo": "Flatten",
+     "forma_entrada": [
+      1,
+      10
+     ],
+     "forma_salida": [
+      1,
+      10
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "red.0",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      10
+     ],
+     "forma_salida": [
+      1,
+      12
+     ],
+     "kernel": null,
+     "unidades": 12,
+     "parametros": 132
+    },
+    {
+     "capa": "red.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      12
+     ],
+     "forma_salida": [
+      1,
+      12
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "red.2",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      12
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 6,
+     "parametros": 78
+    },
+    {
+     "capa": "red.3",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "red.4",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      1
+     ],
+     "kernel": null,
+     "unidades": 1,
+     "parametros": 7
+    }
+   ]
+  },
+  "cnn": {
+   "configuracion": {
+    "canales_entrada": 6,
+    "canales": [
+     8,
+     12
+    ],
+    "densas": [
+     6
+    ],
+    "kernel": 3,
+    "activacion": "relu",
+    "dimension": 1,
+    "pool_local": 2,
+    "pool_final": 1,
+    "dropout": 0.0
+   },
+   "entradas": [
+    [
+     1,
+     6,
+     24
+    ]
+   ],
+   "parametros_entrenables": 537,
+   "capas": [
+    {
+     "capa": "encoder.red.0",
+     "tipo": "Conv1d",
+     "forma_entrada": [
+      1,
+      6,
+      24
+     ],
+     "forma_salida": [
+      1,
+      8,
+      24
+     ],
+     "kernel": [
+      3
+     ],
+     "unidades": 8,
+     "parametros": 152
+    },
+    {
+     "capa": "encoder.red.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      8,
+      24
+     ],
+     "forma_salida": [
+      1,
+      8,
+      24
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.2",
+     "tipo": "MaxPool1d",
+     "forma_entrada": [
+      1,
+      8,
+      24
+     ],
+     "forma_salida": [
+      1,
+      8,
+      12
+     ],
+     "kernel": 2,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.3",
+     "tipo": "Conv1d",
+     "forma_entrada": [
+      1,
+      8,
+      12
+     ],
+     "forma_salida": [
+      1,
+      12,
+      12
+     ],
+     "kernel": [
+      3
+     ],
+     "unidades": 12,
+     "parametros": 300
+    },
+    {
+     "capa": "encoder.red.4",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      12,
+      12
+     ],
+     "forma_salida": [
+      1,
+      12,
+      12
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.5",
+     "tipo": "MaxPool1d",
+     "forma_entrada": [
+      1,
+      12,
+      12
+     ],
+     "forma_salida": [
+      1,
+      12,
+      6
+     ],
+     "kernel": 2,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.6",
+     "tipo": "AdaptiveAvgPool1d",
+     "forma_entrada": [
+      1,
+      12,
+      6
+     ],
+     "forma_salida": [
+      1,
+      12,
+      1
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.7",
+     "tipo": "Flatten",
+     "forma_entrada": [
+      1,
+      12,
+      1
+     ],
+     "forma_salida": [
+      1,
+      12
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "cabeza.0",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      12
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 6,
+     "parametros": 78
+    },
+    {
+     "capa": "cabeza.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "cabeza.2",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      1
+     ],
+     "kernel": null,
+     "unidades": 1,
+     "parametros": 7
+    }
+   ]
+  },
+  "lstm": {
+   "configuracion": {
+    "entrada": 6,
+    "oculta": 10,
+    "capas_lstm": 1,
+    "densas": [
+     6
+    ],
+    "activacion": "relu",
+    "estatica": 3,
+    "estatica_emb": 4,
+    "dropout": 0.0
+   },
+   "entradas": [
+    [
+     1,
+     24,
+     6
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "parametros_entrenables": 833,
+   "capas": [
+    {
+     "capa": "agregador.lstm",
+     "tipo": "LSTM",
+     "forma_entrada": [
+      1,
+      24,
+      6
+     ],
+     "forma_salida": [
+      1,
+      24,
+      10
+     ],
+     "kernel": null,
+     "unidades": 10,
+     "parametros": 720
+    },
+    {
+     "capa": "agregador.rama_estatica.0",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      3
+     ],
+     "forma_salida": [
+      1,
+      4
+     ],
+     "kernel": null,
+     "unidades": 4,
+     "parametros": 16
+    },
+    {
+     "capa": "agregador.rama_estatica.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      4
+     ],
+     "forma_salida": [
+      1,
+      4
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "agregador.cabeza.0",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      14
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 6,
+     "parametros": 90
+    },
+    {
+     "capa": "agregador.cabeza.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "agregador.cabeza.2",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      1
+     ],
+     "kernel": null,
+     "unidades": 1,
+     "parametros": 7
+    }
+   ]
+  },
+  "cnn_lstm": {
+   "configuracion": {
+    "canales_entrada": 6,
+    "canales": [
+     8,
+     12
+    ],
+    "embedding": 10,
+    "oculta": 10,
+    "capas_lstm": 1,
+    "densas": [
+     6
+    ],
+    "kernel": 3,
+    "activacion": "relu",
+    "dimension": 1,
+    "pool_local": 2,
+    "pool_final": 1,
+    "estatica": 0,
+    "estatica_emb": 0,
+    "dropout": 0.0
+   },
+   "entradas": [
+    [
+     1,
+     12,
+     6,
+     24
+    ]
+   ],
+   "parametros_entrenables": 1535,
+   "capas": [
+    {
+     "capa": "encoder.red.0",
+     "tipo": "Conv1d",
+     "forma_entrada": [
+      12,
+      6,
+      24
+     ],
+     "forma_salida": [
+      12,
+      8,
+      24
+     ],
+     "kernel": [
+      3
+     ],
+     "unidades": 8,
+     "parametros": 152
+    },
+    {
+     "capa": "encoder.red.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      12,
+      8,
+      24
+     ],
+     "forma_salida": [
+      12,
+      8,
+      24
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.2",
+     "tipo": "MaxPool1d",
+     "forma_entrada": [
+      12,
+      8,
+      24
+     ],
+     "forma_salida": [
+      12,
+      8,
+      12
+     ],
+     "kernel": 2,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.3",
+     "tipo": "Conv1d",
+     "forma_entrada": [
+      12,
+      8,
+      12
+     ],
+     "forma_salida": [
+      12,
+      12,
+      12
+     ],
+     "kernel": [
+      3
+     ],
+     "unidades": 12,
+     "parametros": 300
+    },
+    {
+     "capa": "encoder.red.4",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      12,
+      12,
+      12
+     ],
+     "forma_salida": [
+      12,
+      12,
+      12
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.5",
+     "tipo": "MaxPool1d",
+     "forma_entrada": [
+      12,
+      12,
+      12
+     ],
+     "forma_salida": [
+      12,
+      12,
+      6
+     ],
+     "kernel": 2,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.6",
+     "tipo": "AdaptiveAvgPool1d",
+     "forma_entrada": [
+      12,
+      12,
+      6
+     ],
+     "forma_salida": [
+      12,
+      12,
+      1
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "encoder.red.7",
+     "tipo": "Flatten",
+     "forma_entrada": [
+      12,
+      12,
+      1
+     ],
+     "forma_salida": [
+      12,
+      12
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "proyeccion.0",
+     "tipo": "Linear",
+     "forma_entrada": [
+      12,
+      12
+     ],
+     "forma_salida": [
+      12,
+      10
+     ],
+     "kernel": null,
+     "unidades": 10,
+     "parametros": 130
+    },
+    {
+     "capa": "proyeccion.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      12,
+      10
+     ],
+     "forma_salida": [
+      12,
+      10
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "agregador.lstm",
+     "tipo": "LSTM",
+     "forma_entrada": [
+      1,
+      12,
+      10
+     ],
+     "forma_salida": [
+      1,
+      12,
+      10
+     ],
+     "kernel": null,
+     "unidades": 10,
+     "parametros": 880
+    },
+    {
+     "capa": "agregador.cabeza.0",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      10
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 6,
+     "parametros": 66
+    },
+    {
+     "capa": "agregador.cabeza.1",
+     "tipo": "ReLU",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      6
+     ],
+     "kernel": null,
+     "unidades": 0,
+     "parametros": 0
+    },
+    {
+     "capa": "agregador.cabeza.2",
+     "tipo": "Linear",
+     "forma_entrada": [
+      1,
+      6
+     ],
+     "forma_salida": [
+      1,
+      1
+     ],
+     "kernel": null,
+     "unidades": 1,
+     "parametros": 7
+    }
+   ]
+  }
+ }
+}

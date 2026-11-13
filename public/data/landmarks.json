@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Ciudad de Loja",
+    "x": 13.21604,
+    "y": 10.85436,
+    "elev": 2.06087,
+    "color": "#82cbff",
+    "longitud": -79.20422,
+    "latitud": -3.99313,
+    "nota": "Centro urbano de referencia"
+  },
+  {
+    "nombre": "Vilcabamba",
+    "x": 11.11974,
+    "y": -18.74623,
+    "elev": 1.56515,
+    "color": "#88e7b3",
+    "longitud": -79.2225,
+    "latitud": -4.260833333333333,
+    "nota": "Coordenadas del Municipio de Loja"
+  },
+  {
+    "nombre": "Podocarpus · Cajanuma",
+    "x": 16.653,
+    "y": -2.63108,
+    "elev": 2.85528,
+    "color": "#e0e88c",
+    "longitud": -79.173,
+    "latitud": -4.115,
+    "nota": "Referencia puntual del sector Cajanuma, no límite del parque"
+  }
+]

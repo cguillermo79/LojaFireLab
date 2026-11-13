@@ -1,0 +1,66 @@
+{
+  "chirps_precipitacion_acumulada_t1_mm": [
+    0.272202,
+    269.191959
+  ],
+  "chirps_precipitacion_acumulada_prev3m_mm": [
+    19.532429,
+    621.501831
+  ],
+  "chirps_dias_secos_t1": [
+    17.0,
+    30.705143
+  ],
+  "chelsa_sfcwind_media_t1_ms": [
+    0.125281,
+    1.531983
+  ],
+  "s2_ndvi_mean": [
+    0.286804,
+    0.828833
+  ],
+  "s2_ndmi_mean": [
+    -0.169142,
+    0.368131
+  ],
+  "s2_nbr_mean": [
+    -0.010581,
+    0.650256
+  ],
+  "alos_elevacion_m_mean": [
+    1448.151123,
+    3444.972656
+  ],
+  "alos_pendiente_grados_mean": [
+    7.729699,
+    36.218178
+  ],
+  "ghsl_distancia_asentamiento_m_mean": [
+    16.0,
+    5728.875
+  ],
+  "osm_distancia_vias_m_mean": [
+    37.656853,
+    9928.078125
+  ],
+  "prop_bosque_nativo": [
+    0.0,
+    1.0
+  ],
+  "prop_pastizal": [
+    0.0,
+    0.853659
+  ],
+  "prop_tierra_agropecuaria": [
+    0.0,
+    0.996018
+  ],
+  "prop_vegetacion_natural_arbustiva_herbacea": [
+    0.0,
+    1.0
+  ],
+  "prop_plantacion_forestal": [
+    0.0,
+    0.434129
+  ]
+}

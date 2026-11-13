@@ -1,0 +1,101 @@
+{
+ "origen": "lab_redes.datos.panel.parametros_escala",
+ "variables": {
+  "chirps_precipitacion_acumulada_t1_mm": {
+   "media": 63.647865295410156,
+   "desviacion": 51.76673126220703,
+   "nombre": "Precipitación del mes previo",
+   "unidad": "mm"
+  },
+  "chirps_precipitacion_acumulada_prev3m_mm": {
+   "media": 191.11111450195312,
+   "desviacion": 126.79458618164062,
+   "nombre": "Precipitación de los 3 meses previos",
+   "unidad": "mm"
+  },
+  "chirps_dias_secos_t1": {
+   "media": 25.347213745117188,
+   "desviacion": 2.718350410461426,
+   "nombre": "Días secos del mes previo",
+   "unidad": "días"
+  },
+  "chelsa_sfcwind_media_t1_ms": {
+   "media": 0.512255847454071,
+   "desviacion": 0.33313190937042236,
+   "nombre": "Viento medio del mes previo",
+   "unidad": "m/s"
+  },
+  "s2_ndvi_mean": {
+   "media": 0.6292533874511719,
+   "desviacion": 0.1340736597776413,
+   "nombre": "NDVI",
+   "unidad": "índice"
+  },
+  "s2_ndmi_mean": {
+   "media": 0.1421026587486267,
+   "desviacion": 0.13444815576076508,
+   "nombre": "NDMI",
+   "unidad": "índice"
+  },
+  "s2_nbr_mean": {
+   "media": 0.39401787519454956,
+   "desviacion": 0.1664007306098938,
+   "nombre": "NBR",
+   "unidad": "índice"
+  },
+  "alos_elevacion_m_mean": {
+   "media": 2418.603515625,
+   "desviacion": 520.8138427734375,
+   "nombre": "Elevación",
+   "unidad": "m"
+  },
+  "alos_pendiente_grados_mean": {
+   "media": 25.036596298217773,
+   "desviacion": 6.972990989685059,
+   "nombre": "Pendiente",
+   "unidad": "grados"
+  },
+  "ghsl_distancia_asentamiento_m_mean": {
+   "media": 1659.0054931640625,
+   "desviacion": 1498.52490234375,
+   "nombre": "Distancia a asentamientos",
+   "unidad": "m"
+  },
+  "osm_distancia_vias_m_mean": {
+   "media": 2331.2978515625,
+   "desviacion": 2626.735595703125,
+   "nombre": "Distancia a vías",
+   "unidad": "m"
+  },
+  "prop_bosque_nativo": {
+   "media": 0.2505623698234558,
+   "desviacion": 0.3704908490180969,
+   "nombre": "Bosque nativo",
+   "unidad": "proporción"
+  },
+  "prop_pastizal": {
+   "media": 0.07252701371908188,
+   "desviacion": 0.177282452583313,
+   "nombre": "Pastizal",
+   "unidad": "proporción"
+  },
+  "prop_tierra_agropecuaria": {
+   "media": 0.2580316364765167,
+   "desviacion": 0.3486482501029968,
+   "nombre": "Tierra agropecuaria",
+   "unidad": "proporción"
+  },
+  "prop_vegetacion_natural_arbustiva_herbacea": {
+   "media": 0.26644986867904663,
+   "desviacion": 0.3674359917640686,
+   "nombre": "Vegetación arbustiva y herbácea",
+   "unidad": "proporción"
+  },
+  "prop_plantacion_forestal": {
+   "media": 0.024169085547327995,
+   "desviacion": 0.1064612865447998,
+   "nombre": "Plantación forestal",
+   "unidad": "proporción"
+  }
+ }
+}

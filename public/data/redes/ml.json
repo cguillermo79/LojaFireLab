@@ -1,0 +1,165 @@
+{
+ "origen": "results/aprendizaje_automatico/manifiesto_ml.json · importancia_ml.csv",
+ "scikit_learn": "1.9.1",
+ "hiperparametros": {
+  "logistica": {
+   "imputacion": "media de entrenamiento",
+   "escalado": "estandarización",
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "bosque": {
+   "n_estimators": 200,
+   "min_samples_leaf": 50,
+   "max_features": "sqrt",
+   "max_samples": 0.5
+  },
+  "boosting": {
+   "learning_rate": 0.05,
+   "max_iter": 400,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 100,
+   "l2_regularization": 1.0,
+   "early_stopping": false
+  }
+ },
+ "semillas": [
+  1,
+  20260827
+ ],
+ "variables": [
+  "chirps_precipitacion_acumulada_t1_mm",
+  "chirps_precipitacion_acumulada_prev3m_mm",
+  "chirps_dias_secos_t1",
+  "chelsa_sfcwind_media_t1_ms",
+  "s2_ndvi_mean",
+  "s2_ndmi_mean",
+  "s2_nbr_mean",
+  "alos_elevacion_m_mean",
+  "alos_pendiente_grados_mean",
+  "ghsl_distancia_asentamiento_m_mean",
+  "osm_distancia_vias_m_mean",
+  "prop_bosque_nativo",
+  "prop_pastizal",
+  "prop_tierra_agropecuaria",
+  "prop_vegetacion_natural_arbustiva_herbacea",
+  "prop_plantacion_forestal"
+ ],
+ "importancia_boosting": {
+  "metodo": "Permutación sobre la validación de cada fold (semilla 1, 3 repeticiones), aumento de log-loss",
+  "filas": [
+   {
+    "variable": "chirps_precipitacion_acumulada_prev3m_mm",
+    "media": 0.008430213508862444,
+    "min": 0.00042048232914951533,
+    "max": 0.02287149481998362,
+    "folds": 15
+   },
+   {
+    "variable": "chirps_precipitacion_acumulada_t1_mm",
+    "media": 0.006426975240103454,
+    "min": 0.00028665129270473086,
+    "max": 0.02242071260473553,
+    "folds": 15
+   },
+   {
+    "variable": "s2_ndmi_mean",
+    "media": 0.0008616871693387148,
+    "min": -0.0011070489710525225,
+    "max": 0.005892657938784167,
+    "folds": 15
+   },
+   {
+    "variable": "osm_distancia_vias_m_mean",
+    "media": 0.0006385585795666096,
+    "min": -0.0012814124113052297,
+    "max": 0.005148930838643197,
+    "folds": 15
+   },
+   {
+    "variable": "prop_bosque_nativo",
+    "media": 0.000625120134406813,
+    "min": -0.0024536389451748075,
+    "max": 0.005560987382219921,
+    "folds": 15
+   },
+   {
+    "variable": "s2_ndvi_mean",
+    "media": 0.000605542919915101,
+    "min": -0.0009275850145682071,
+    "max": 0.004501595476889599,
+    "folds": 15
+   },
+   {
+    "variable": "alos_elevacion_m_mean",
+    "media": 0.000375323798392275,
+    "min": -0.004397963210452031,
+    "max": 0.003408302012483294,
+    "folds": 15
+   },
+   {
+    "variable": "chirps_dias_secos_t1",
+    "media": 0.00014506971532203663,
+    "min": -0.002513382112251661,
+    "max": 0.0018094729975191108,
+    "folds": 15
+   },
+   {
+    "variable": "prop_vegetacion_natural_arbustiva_herbacea",
+    "media": 8.15389756602541e-05,
+    "min": -0.0016390299288307764,
+    "max": 0.0015452712762393055,
+    "folds": 15
+   },
+   {
+    "variable": "prop_plantacion_forestal",
+    "media": 2.0066920662473793e-05,
+    "min": -0.00015559577432475621,
+    "max": 0.0005691032261942083,
+    "folds": 15
+   },
+   {
+    "variable": "prop_tierra_agropecuaria",
+    "media": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "folds": 15
+   },
+   {
+    "variable": "ghsl_distancia_asentamiento_m_mean",
+    "media": -3.80445869461265e-05,
+    "min": -0.0049715971028161015,
+    "max": 0.0018628385942524167,
+    "folds": 15
+   },
+   {
+    "variable": "alos_pendiente_grados_mean",
+    "media": -6.747485169968078e-05,
+    "min": -0.0014140700861925276,
+    "max": 0.0005065945929426848,
+    "folds": 15
+   },
+   {
+    "variable": "prop_pastizal",
+    "media": -0.00011717001035430353,
+    "min": -0.0009138909662008791,
+    "max": 0.0007193657885840518,
+    "folds": 15
+   },
+   {
+    "variable": "s2_nbr_mean",
+    "media": -0.0001391551968741493,
+    "min": -0.0009266348913373976,
+    "max": 0.0015557394028343635,
+    "folds": 15
+   },
+   {
+    "variable": "chelsa_sfcwind_media_t1_ms",
+    "media": -0.0010747454708242554,
+    "min": -0.009689122227166827,
+    "max": 0.0018296561616520334,
+    "folds": 15
+   }
+  ]
+ }
+}
